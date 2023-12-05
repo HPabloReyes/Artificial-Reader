@@ -17,12 +17,10 @@ const ImageReader = () => {
       // Use Tesseract.js for OCR on the image
       Tesseract.recognize(
         reader.result,
-        "eng",
+        "spa",
         {
           config: {
-            tessedit_ocr_engine_mode: 1,
-            tessedit_char_whitelist:
-              "0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ",
+            tessedit_ocr_engine_mode: 11,
           },
           logger: (info) => console.log(info),
         } // Optional logger for debugging
